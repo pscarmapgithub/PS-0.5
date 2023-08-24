@@ -36,6 +36,7 @@ kind: Service
 metadata:
   name: user-manager
 spec:
+  type: LoadBalancer  # Set the service type to LoadBalancer
   ports:
   - port: 7070
   selector:

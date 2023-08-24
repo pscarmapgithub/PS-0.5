@@ -37,6 +37,7 @@ kind: Service
 metadata:
   name: social-graph-manager
 spec:
+  type: LoadBalancer  # Set the service type to LoadBalancer
   ports:
   - port: 9090
   selector:
